@@ -1,0 +1,26 @@
+@charset "utf-8";
+body{
+  color:red;
+}
+/* 요소 선택자 */
+p{
+  background-color: yellow;
+  color:green;
+}
+p{
+  background-color:lime;
+}
+/* 클래스 선택자 */
+  p.note{
+  background-color: pink;
+} 
+.note{
+  background-color: orange;
+}
+/* id 선택자 */
+  #brief{
+  background-color: skyblue;
+}  
+/* 1.겹침, 2.상속,3.구체성 원리 알아야함 
+body>note>id 순으로 구체성 점수가 있다. important는 가장 높은 
+점수, 같은 점수대에서는 후순위 우선*/

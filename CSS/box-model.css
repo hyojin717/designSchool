@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.box1{
+  background: yellow;
+  width: 500px;
+  height: 100px;
+  border: 10px solid black;
+  padding: 20px;
+  margin: 50px auto;/*auto로 배치기법, 오른쪽 정렬, 왼쪽 정렬이지만 상자가 있어서 빈 여백에 레이아웃으로 쓸수없음, padding에선 쓸수없음*/
+}
+.box2{
+  box-sizing: border-box;/* 보더와 패딩을 포함해서 아래 높이와 너비 해당함*/
+  background: pink;
+  width: 500px;
+  height: 100px;
+  border: 10px solid black;
+  padding: 20px;
+  margin: 70px auto;/*shift+alt+아래 화살표 복사*/
+  /* '*' 전체 선책자 -굉장히 중요
+     마진이 위아래로 만나는 순간 겹침- 마진 겹침, 큰쪽으로 포함됨 
+     마진은 등간격으로 배치할때 많이 사용 
+     패딩은 겹치지 않으므로 등간격으로 표현하기 어려움, 여백을 다르게 주고싶을때 패딩
+     정답이 없다, 무수히 많은 방법론-가장 효율적으로 찾는게 어렵다*/
+  
+}

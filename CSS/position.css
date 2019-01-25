@@ -1,0 +1,41 @@
+@charset "utf-8";
+h1{
+  background: pink;
+  box-shadow: 5px 5px 0 0 black;
+}
+.shadow{
+  background: black;
+}
+h2{
+  position: relative;
+  background: yellow;
+  top: -5px;
+  left: -5px;
+} /*영역이 확보됨, 상대위치 내가 있었던 기준으로 */
+
+.parent{
+  position: relative; /*parent가 static이므로 relative를 안주면 벗어나서 상위(예를 들어 바디)에서 배치됨*/
+  background: orange;
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+h3{
+  background: lime;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px; /*자기 보다 상위 요소 기준으로 변경됨, 상위요소가 static일 경우는 더 올라감*/
+  margin: auto;
+  width: 200px;
+  height: 150px;
+} /*레이어가 됨, 자기있던 영역이 확보가 안됨, 사라진거처럼 느껴짐, */
+
+h4{
+  background: aqua;
+  position: fixed;
+  bottom:50px;
+  right: 50px; 
+}/*자기 보다 상위 기준이 아니라 뷰포트 기준으로 배치함*/

@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.wrapper{
+  background: yellow;
+  height: 200px;
+  border: 10px solid black;
+  display: flex; /*너비가 더 넓어도 부모크기에 맞춰서 알아서 유연하게 조정해줌*/
+  flex-wrap: wrap; /*flexable layout*/
+  flex-direction: row;
+  justify-content: space-between; /*정렬 space-evenly는 explore 11도 안됨 크롬,사파리,폭스같은데만 됨*/
+  align-items: flex-start; /*교차축 정렬*/
+}
+.box1, .box2, .box3, .box4 {
+  width: 200px;
+ height: 100px;
+}
+.box1{
+  background: rgba(255, 0, 0, .5);
+  order: 1;
+}
+.box2{
+  background: rgba(0, 255, 0, .5);
+  align-self: center;
+}
+.box3{
+  background: rgba(0, 0, 255, .5);
+  align-self: flex-end;
+}
+.box4{
+  background: rgba(255, 0, 255, .5);
+  order: -1;
+}
